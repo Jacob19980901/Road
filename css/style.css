@@ -1,0 +1,249 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* navbar */
+nav .navbar-nav {
+  display: flex;
+  justify-content: flex-end;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgb(1, 1, 95);
+  height: 50px;
+}
+
+nav .nav_menu a {
+  padding: 15px 30px;
+  text-decoration: none;
+  color: white;
+}
+nav .nav_menu a:hover {
+  font-size: 19px;
+  transition: 0.8s;
+}
+/* end_navbar */
+
+/* uzb_map */
+.uzb_map {
+  text-align: center;
+  background-color: #01171b;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+.uzb_map svg {
+  width: 1250px;
+  height: 50%;
+}
+
+.uzb_map svg path {
+  fill: #00394f;
+  stroke: #eee;
+  stroke-width: 0.25;
+}
+
+.uzb_map svg path:hover {
+  fill: dodgerblue;
+  transition: 0.6s;
+  cursor: pointer;
+}
+/* end_uzb_map */
+
+/* regions_maps */
+.regions .map {
+  display: none;
+}
+
+.regions .active {
+  display: block;
+}
+
+.regions .map h1 {
+  background-color: rgb(1, 1, 95);
+  color: white;
+  padding-bottom: 10px;
+}
+
+.regions .marks {
+  display: flex;
+  justify-content: space-around;
+}
+
+.regions .marks .plan {
+  font-size: 30px;
+  color: rgb(255, 102, 0);
+}
+
+.regions .marks .roat {
+  font-size: 30px;
+  color: rgb(1, 1, 150);
+}
+/* end_regions_maps */
+
+/* about_us */
+.aboutus,
+.contacts {
+  background-image: url(../images/14612617\ .jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.about_us {
+  width: 90%;
+  margin: 0 auto;
+}
+.about_us h1 {
+  font-size: 50px;
+  text-align: center;
+  margin-top: 50px;
+  font-family: "Montserrat";
+  font-weight: 700;
+}
+.about_us p {
+  text-align: center;
+}
+/* end_about_us */
+
+/* contacts */
+.contact {
+  margin: 200px 300px;
+}
+
+.contact .all-social {
+  display: flex;
+  justify-content: center;
+}
+
+.contact .phone-mail a {
+  color: black;
+  font-size: 30px;
+}
+
+.contact .phone-mail a i {
+  padding: 20px 5px 5px 0;
+}
+
+.contact .phone-mail a:hover {
+  text-decoration: none;
+  color: blue;
+}
+
+.contact .social a {
+  font-size: 30px;
+}
+
+.contact .social a i {
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 50%;
+}
+
+.contact .social a .fa-facebook {
+  padding: 10px 13px;
+}
+
+.contact ul li {
+  padding: 10px 0 0 0;
+}
+/* end_contact */
+
+/* footer */
+footer {
+  background-color: rgb(1, 1, 95);
+  height: 50px;
+}
+/* end_footer */
+
+/* responsive */
+
+@media screen and (max-width: 1300px) {
+  .uzb_map svg {
+    width: 1100px;
+  }
+}
+@media screen and (max-width: 1100px) {
+  .uzb_map svg {
+    width: 1000px;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .uzb_map svg {
+    width: 800px;
+  }
+}
+@media screen and (max-width: 900px) {
+  .uzb_map svg {
+    width: 700px;
+  }
+}
+@media screen and (max-width: 800px) {
+  .uzb_map svg {
+    width: 600px;
+  }
+
+  nav {
+    height: 40px;
+  }
+  nav .nav_menu a {
+    font-size: 12px;
+  }
+
+  .regions .marks .plan {
+    font-size: 20px;
+  }
+  .regions .marks .roat {
+    font-size: 20px;
+  }
+
+  .regions .title {
+    font-size: 20px;
+  }
+
+  footer {
+    height: 40px;
+  }
+}
+@media screen and (max-width: 700px) {
+  .uzb_map svg {
+    width: 500px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .uzb_map svg {
+    width: 400px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .uzb_map svg {
+    width: 300px;
+  }
+
+  nav {
+    height: 30px;
+  }
+  nav .nav_menu a {
+    font-size: 10px;
+  }
+
+  .regions .marks .plan {
+    font-size: 10px;
+  }
+  .regions .marks .roat {
+    font-size: 10px;
+  }
+
+  .regions .title {
+    font-size: 15px;
+    padding-top: 5px;
+  }
+
+  footer {
+    height: 30px;
+  }
+}
