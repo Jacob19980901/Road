@@ -4,6 +4,12 @@
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
+body {
+  background: url(../images/back7.jpg) fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+  /* height: 100vh !important; */
+}
 
 /* navbar */
 nav .navbar-nav {
@@ -12,45 +18,50 @@ nav .navbar-nav {
 }
 nav {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
-  background-color: rgb(1, 1, 95);
   height: 50px;
 }
 
 nav .nav_menu a {
-  padding: 15px 30px;
+  padding: 12px 20px;
   text-decoration: none;
   color: white;
+  font-size: 20px;
 }
+nav .nav_menu a:active,
+nav .nav_menu a:focus,
 nav .nav_menu a:hover {
-  font-size: 19px;
   transition: 0.8s;
+  color: white;
+  /* border-bottom: 5px solid #29ca8e; */
+  border-bottom: 5px solid #00394fd0;
 }
 /* end_navbar */
 
 /* uzb_map */
 .uzb_map {
   text-align: center;
-  background-color: #01171b;
-  padding-top: 50px;
-  padding-bottom: 50px;
+  background-color: transparent;
+  padding: 65px 0;
 }
 .uzb_map svg {
-  width: 1250px;
-  height: 50%;
+  width: 1100px;
+  /* height: 50%; */
 }
 
 .uzb_map svg path {
-  fill: #00394f;
+  fill: #00394fd0;
+  /* fill: #00394f; */
   stroke: #eee;
   stroke-width: 0.25;
 }
 
 .uzb_map svg path:hover {
-  fill: dodgerblue;
+  fill: rgba(30, 143, 255, 0.281);
   transition: 0.6s;
   cursor: pointer;
+  font-size: 50px;
 }
 /* end_uzb_map */
 
@@ -64,7 +75,8 @@ nav .nav_menu a:hover {
 }
 
 .regions .map h1 {
-  background-color: rgb(1, 1, 95);
+  /* background-color: rgb(1, 1, 95); */
+  background-color: #00394fd0;
   color: white;
   padding-bottom: 10px;
 }
@@ -88,7 +100,9 @@ nav .nav_menu a:hover {
 /* about_us */
 .aboutus,
 .contacts {
-  background-image: url(../images/14612617\ .jpg);
+  /* background-image: url(../images/back7.jpg);   */
+  background: url(../images/back7.jpg) fixed;
+
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -153,7 +167,7 @@ nav .nav_menu a:hover {
 
 /* footer */
 footer {
-  background-color: rgb(1, 1, 95);
+  background-color: #00394fd0;
   height: 50px;
 }
 /* end_footer */
